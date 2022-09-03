@@ -1,6 +1,7 @@
-// export default function getRefs() {
-//   return {
-//     cardContainer: document.querySelector('.js-card-container'),
-//     searchForm: document.querySelector('.js-search-form'),
-//   };
-// }
+export default function getRefs() {
+        return {
+                searchForm: document.querySelector('.js-search-form'),
+          cardContainer: document.querySelector('.js-card-container'),
+          
+        };
+      }
