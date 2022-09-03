@@ -1,0 +1,30 @@
+{
+  "name": "goit-js-mod-10-ii",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://vokur13.github.io/goit-js-mod-10-ii",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-mod-10-ii/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vokur13/goit-js-mod-10-ii.git"
+  },
+  "keywords": [],
+  "author": "VOLODYMYR_KUROV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vokur13/goit-js-mod-10-ii/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
