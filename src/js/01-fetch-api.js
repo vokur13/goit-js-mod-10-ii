@@ -20,9 +20,13 @@ import API from './api-service';
 
 // const refs = getRefs();
 
-const refs =
-{cardContainer: document.querySelector('.js-card-container'),
-searchForm: document.querySelector('.js-search-form')}
+const refs ={
+        
+}
+
+// const refs =
+// {cardContainer: document.querySelector('.js-card-container'),
+// searchForm: document.querySelector('.js-search-form')}
 
 refs.form.addEventListener('submit', onSearch);
 
