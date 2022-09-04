@@ -20,7 +20,7 @@ import getRefs from './get-refs';
 
 const refs = getRefs();
 
-refs.form.addEventListener('submit', onSearch);
+refs.searchForm.addEventListener('submit', onSearch);
 
 function onSearch(e) {
   e.preventDefault();
@@ -40,3 +40,16 @@ function renderPokemonCard(pokemon) {
 function onFetchError(error) {
   alert('Мы не смогли найти ваш Pokemon!');
 }
+
+// ================================================
+
+// Параметры запроса
+
+// pokemon?limit=20&offset=20
+// fetch("https://pokeapi.co/api/v2/ability/?limit=20&offset=20")
+// fetch("https://pixabay.com/api/?key={ KEY }&q=yellow+flowers&image_type=photo").then(r=>r.json()).then(console.log)
+// 
+
+fetch("https://api.weatherstack.com/current?access_key=82f18161d6188381eddf7b597d1c796a&query=39.916668,116.383331").then(r=>r.json()).then(console.log).catch(console.log)
+
+
