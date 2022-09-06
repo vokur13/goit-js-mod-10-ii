@@ -50,6 +50,14 @@ function onFetchError(error) {
 // fetch("https://pixabay.com/api/?key={ KEY }&q=yellow+flowers&image_type=photo").then(r=>r.json()).then(console.log)
 // 
 
-fetch("https://api.weatherstack.com/current?access_key=82f18161d6188381eddf7b597d1c796a&query=39.916668,116.383331").then(r=>r.json()).then(console.log).catch(console.log)
+const url="https://newsapi.org/v2/everything?q=cars"
+const options={
+        headers:{
+                // 'X-Api-Key':'57cac8b7974a445687521e4c2c792a41'
+                'Authorization':'57cac8b7974a445687521e4c2c792a41'
+        }
+}
+
+fetch(url,options).then(r=>r.json()).then(console.log).catch(console.log)
 
 
