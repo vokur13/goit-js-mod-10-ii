@@ -1,0 +1,11 @@
+{
+  "user": {
+    "name": "Австралия",
+    "capital": "Канберра",
+    "currency": "Австралийский доллар (AUD)",
+    "population": 24970200,
+    "flag": "https://wikiway.com/upload/iblock/742/800pxFlagofAustraliasvg.png",
+    "infected": false,
+    "language": { "eng": "English", "fra": "French" }
+  }
+}

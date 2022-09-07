@@ -1,17 +1,18 @@
+import hbsTemlate from '../templates/workbook.hbs';
+import users from '../json/data-base.json';
 import '../css/common.css';
-import template from '../templates/workbook.hbs';
 
-const wrap = document.querySelector('.wrap');
-console.log(wrap);
+//
 
-const user = {
-  username: 'Mango',
-  age: 22,
-  phone: 876876,
-};
+// '<div>{{name}}</div>';
+// ('<div><%name%></div>');
 
-console.log(user);
+// const temlate = SuperTemplatingEngine.compile('<div>{{name}}</div>');
+// tempale({ name: 'Mango' }); //('<div>Mango</div>');
 
-const markupInfo = template(user);
-wrap.innerHTML = markupInfo;
-console.log(wrap.innerHTML);
+// -------------------------------------------------------------//
+
+const container = document.querySelector('.js-palette');
+const cardsMarkup = hbsTemlate(users);
+
+container.insertAdjacentHTML('beforeend', cardsMarkup);
